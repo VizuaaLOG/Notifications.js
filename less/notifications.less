@@ -1,0 +1,42 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+@blue: #3498db;
+@orange: #e67e22;
+@green: #2ecc71;
+@red: #e74c3c;
+
+.notification {
+    width: 300px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    right: -300px;
+    background: #ecf0f1;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    line-height: 80px;
+    border-left: 5px solid;
+}
+
+.notification-info {
+    border-left-color: @blue;
+    color: @blue;
+}
+
+.notification-success {
+    border-left-color: @green;
+    color: @green;
+}
+
+.notification-warning {
+    border-left-color: @orange;
+    color: @orange;
+}
+
+.notification-error {
+    border-left-color: @red;
+    color: @red;
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notifications Demo</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="notifications.min.css">
+</head>
+<body style="background: #111111;">
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+    <div id="pageWrapper">
+        <h1>Notifications.js</h1>
+        <p>
+            Notifications.js is a lightweight addon for jQuery which enables you to easily create notifications that will be visible on the bottom
+            right of the screen. Each notification has a flat and simple design which can be easily changed and includes a sleek animation.
+        </p>
+        <div id="demo" class="contentBox">
+            <h3>Demo</h3>
+            <button id="showInfo">Show Info Notification</button>
+            <button id="showError">Show Error Notification</button>
+            <button id="showWarning">Show Warning Notification</button>
+            <button id="showSuccess">Show Success Notification</button>
+        </div>
+        <div id="installation" class="contentBox">
+            <h3>Installation</h3>
+            <p>
+                To install Notifications.js you will need jQuery 1.10.2+, notifications.min.js and notifications.min.css.
+            </p>
+            <p>
+                Now include the following line inside the head of your document.
+            </p>
+            <pre>
+                &lsaquo;link rel="stylesheet" href="path/to/notifications.min.css"&gt;
+            </pre>
+            <p>
+                Then include the following line before you closing body tag
+            </p>
+            <pre>
+                &lsaquo;script src="path/to/notifications.min.js"&gt;
+            </pre>
+        </div>
+        <div id="usage" class="contentBox">
+            <h3>Usage</h3>
+            <p>
+                To use Notifications.js you simply need to call it as a function. Below is what you need.
+            </p>
+            <pre>
+                displayNotification(type, content, showTime);
+            </pre>
+            <p>
+                <ul>
+                    <li>
+                        <strong>Type - </strong>This is the type of notification; error, success, warning or info. You can create your own statuses
+                        by creating the css for it using notification-nameOfYouStatus then replacing the type with nameOfYourStatus. This will then
+                        apply your styles instead.
+                    </li><br>
+                    <li>
+                        <strong>Content - </strong>In here place the content you would like to be displayed. <strong>NOTE: Keep it short
+                        because it is a notification so the plugin cuts any text out that is too long.</strong>
+                    </li><br>
+                    <li>
+                        <strong>showTime - </strong>The length you would like to notification to be displayed in seconds. E.G. 5000 = 5 seconds.
+                    </li>
+                </ul>
+            </p>
+        </div>
+        <div id="example" class="contentBox">
+            <h3>Example Usage</h3>
+            <p>
+                You can add the function inside a on click event. Like so:
+            </p>
+            <pre>
+                $('#showError').on('click', function(e) { 
+                     displayNotification('error', 'This is an error notification', 2000); 
+                     e.preventDefault(); 
+                });
+            </pre>
+            <p>
+                Example usage when calling the notification from a custom function
+            </p>
+            <pre>
+                function onLogin() {
+                    displayNotification('success', 'You have successfully logged in', 2000);
+                }
+            </pre>
+        </div>
+        <div id="request" class="contentBox">
+            <h3>Feature Request & Contribution</h3>
+            <p>
+                If you would like to request a feature, fix or change then please post an issue on the github page. You can also contribute to this
+                project by forking on github, make sure changes and then publish a pull request.
+            </p>
+        </div>
+    </div>
+    
+    <script src="../js/jquery-1.10.2.js"></script>
+    <script src="notifications.min.js"></script>
+    <script>
+        $('#showError').on('click', function(e) {
+            displayNotification('error', 'This is an error notification', 2000);
+            e.preventDefault();
+        });
+        $('#showInfo').on('click', function(e) {
+            displayNotification('info', 'This is an info notification', 2000);
+            e.preventDefault();
+        });
+        $('#showSuccess').on('click', function(e) {
+            displayNotification('success', 'This is an success notification', 2000);
+            e.preventDefault();
+        });
+        $('#showWarning').on('click', function(e) {
+            displayNotification('warning', 'This is an warning notification', 2000);
+            e.preventDefault();
+        });
+        $('#showNothing').on('click', function(e) {
+            displayNotification('unknown', 'This is an unknown notification', 2000);
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-Notifications.js
+Notifications.js Ver: 1.0
 ================
 
 Notifications.js is a lightweight addon for jQuery which enables you to easily create notifications that will be visible on the bottom

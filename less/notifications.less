@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700,400);
-
 @blue: #3498db;
 @orange: #e67e22;
 @green: #2ecc71;
@@ -22,12 +20,10 @@
 }
 
 .notification.show {
-	-webkit-animation: notifShow 700ms forwards;
 	animation: notifShow 700ms forwards;
 }
 
 .notification.hide {
-	-webkit-animation: notifHide 700ms forwards;
 	animation: notifHide 700ms forwards;
 }
 
@@ -51,20 +47,10 @@
     color: @red;
 }
 
-@-webkit-keyframes notifShow {
-	71.5% { right: 5px;	}
-	100% { right: 0; }
-}
-
+/* Notifications */
 @keyframes notifShow {
 	71.5% { right: 5px;	}
 	100% { right: 0; }
-}
-
-@-webkit-keyframes notifHide {
-	0% { right: 0px; }
-	28.5% { right: 5px }
-	100% { right: -300px; }
 }
 
 @keyframes notifHide {

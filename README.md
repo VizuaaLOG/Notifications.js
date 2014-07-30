@@ -18,7 +18,7 @@ If there are any problems please file an issue.
 
 ### Installation
 To install Notifications.js you will need `jQuery 1.10.2+`, `notifications.min.js` and `notifications.min.css`. Now include the following line inside the head of your document.
-**Note: If using the version without jQuery then `jQuery` is not required and instead you need `notifications-nojquery.min.js` and `notifications-nojquery.min.css` **
+Note: If using the version without jQuery then jQuery is not required and instead you need notifications-nojquery.min.js and notifications-nojquery.min.css
 
 ```
 <link rel="stylesheet" href="path/to/notifications.min.css">

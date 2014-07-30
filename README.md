@@ -3,7 +3,7 @@ Notifications.js
 
 ##### Ver 1.1.0
 
-Notifications.js is a lightweight addon for jQuery which enables you to easily create notifications that will be visible on the bottom
+Notifications.js is a lightweight addon for jQuery, there is now one without jQuery, which enables you to easily create notifications that will be visible on the bottom
 right of the screen. Each notification has a flat and simple design which can be easily changed and includes a sleek animation.
 
 ### Browser Support
@@ -17,7 +17,8 @@ As far as I know Notifications.js supports the following browsers:
 If there are any problems please file an issue.
 
 ### Installation
-To install Notifications.js you will need jQuery 1.10.2+, notifications.min.js and notifications.min.css. Now include the following line inside the head of your document.
+To install Notifications.js you will need `jQuery 1.10.2+`, `notifications.min.js` and `notifications.min.css`. Now include the following line inside the head of your document.
+**Note: If using the version without jQuery then `jQuery` is not required and instead you need `notifications-nojquery.min.js` and `notifications-nojquery.min.css` **
 
 ```
 <link rel="stylesheet" href="path/to/notifications.min.css">
@@ -41,7 +42,7 @@ displayNotification(type, content, showTime);
 - __showTime -__ The length you would like to notification to be displayed in seconds. E.G. 5000 = 5 seconds.
 
 ### Example Usage
-You can add the function inside a on click event. Like so:
+You can add the function inside a on click event. This example is using jQuery but the same applies if using vanilla `addEventListener` Like so:
 
 ```javascript
 $('#showError').on('click', function(e) { 

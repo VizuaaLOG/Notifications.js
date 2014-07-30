@@ -1,21 +1,31 @@
 Notifications.js
 ================
 
-##### Ver 1.0
+##### Ver 1.1.0
 
 Notifications.js is a lightweight addon for jQuery which enables you to easily create notifications that will be visible on the bottom
 right of the screen. Each notification has a flat and simple design which can be easily changed and includes a sleek animation.
 
+### Browser Support
+As far as I know Notifications.js supports the following browsers:
++ IE 8+
++ Chrome
++ Safari
++ Opera
++ Firefox
+
+If there are any problems please file an issue.
+
 ### Installation
 To install Notifications.js you will need jQuery 1.10.2+, notifications.min.js and notifications.min.css. Now include the following line inside the head of your document.
 
-```html
+```
 <link rel="stylesheet" href="path/to/notifications.min.css">
 ```
 
 Then include the following line before you closing body tag
 
-```html
+```
 <script src="path/to/notifications.min.js">
 ```
 
